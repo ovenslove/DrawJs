@@ -6,24 +6,11 @@ DrawJs 专为解决小程序中 canvas 绘图操作，通过简洁的使用方�
 
 ## 使用方法
 
-文件 _app.json_
-
-```json
-{
-  "plugins": {
-    "DrawJs": {
-      "version": "dev",
-      "provider": "wx0c5dea094e08f9e2"
-    }
-  }
-}
-```
-
 文件 _pages/index/index.js_
 
 ```js
 // 引入插件DrawJs
-const DrawJs = requirePlugin("DrawJs");
+var DrawJs = require('../../lib/DrawJs/DrawJs');
 // 初始化插件
 DrawJs.init();
 // 创建canvas的对象
@@ -307,7 +294,11 @@ fDrawJs.exce([options])
 
 - tips1: rect() 方法在设置过大圆角后会导致borderWidth过大时出现锯齿，原因未知，故希望通过合理的值进行避免
 - tips2: ring() 方法中的宽度计算规则为 外径为radius+lineWidth/2，经过校准，使得外径=radius+lineWidth
-  
+
+### Feedback
+
+> 如果在使用过程中发现问题或者有更好的建议，欢迎到 [issue](https://github.com/ovenslove/DrawJs/issues) 内留言，如果你有想法，可以fork后推送一条[PullRequest](https://github.com/ovenslove/DrawJs/pulls)给我,谢谢!!!
+
 ### 致谢
 
 > 非常感谢其他开发者提供的开源代码
