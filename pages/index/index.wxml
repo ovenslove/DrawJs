@@ -1,0 +1,6 @@
+<view class="pageContainer">
+    <view class="mainContainer">
+        <view class="title">canvas插件</view>
+        <canvas class="canvasItem" style="" canvas-id="firstCanvas"></canvas>
+    </view>
+</view>
